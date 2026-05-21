@@ -1,0 +1,359 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(34, 197, 94, 0.14), transparent 26%),
+    linear-gradient(180deg, #f0fdf4 0%, #ffffff 35%, #f8fafc 100%);
+  color: #111827;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 12px 14px 64px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 12px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+}
+
+.brandLogoWrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+  border: 1px solid #d1fae5;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #15803d;
+  margin-bottom: 4px;
+}
+
+.brandCopy {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.navActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.navBtn {
+  min-height: 48px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0 16px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.navBtn:hover {
+  transform: translateY(-1px);
+}
+
+.navBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btnHome {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+.btnCatalog {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.btnLogin {
+  background: #eef2ff;
+  color: #1e3a8a;
+  border: 1px solid #c7d2fe;
+}
+
+.btnProfile {
+  background: #ecfdf5;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.btnPublish {
+  background: linear-gradient(135deg, #facc15 0%, #f59e0b 100%);
+  color: #111827;
+  box-shadow: 0 12px 26px rgba(245, 158, 11, 0.24);
+  flex: 1;
+}
+
+.hero {
+  border-radius: 28px;
+  padding: 22px 16px;
+  background: linear-gradient(135deg, #14532d 0%, #16a34a 58%, #22c55e 100%);
+  color: white;
+  box-shadow: 0 18px 40px rgba(21, 128, 61, 0.18);
+}
+
+.heroLabel {
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+}
+
+.heroTitle {
+  margin: 0 0 10px;
+  font-size: clamp(30px, 8vw, 56px);
+  line-height: 1.02;
+  font-weight: 900;
+}
+
+.heroText {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 760px;
+}
+
+.heroActions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.heroBtn {
+  min-height: 52px;
+  border-radius: 16px;
+  text-decoration: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.heroBtn:hover {
+  transform: translateY(-1px);
+}
+
+.heroBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.heroBtnPrimary {
+  background: linear-gradient(135deg, #facc15 0%, #f59e0b 100%);
+  color: #111827;
+  box-shadow: 0 12px 26px rgba(245, 158, 11, 0.22);
+}
+
+.heroBtnLight {
+  background: #ffffff;
+  color: #14532d;
+}
+
+.heroBtnGhost {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.section {
+  padding-top: 22px;
+}
+
+.sectionHead {
+  margin-bottom: 14px;
+}
+
+.sectionHead h2 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  line-height: 1.08;
+}
+
+.sectionHead p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.categoryCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.categoryLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.categoryEmoji {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #ecfdf5;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.categoryName {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.categoryArrow {
+  font-size: 18px;
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+.quickBoxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.quickBox {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+.quickBox h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.quickBox p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.quickBoxActions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.smallBtn {
+  min-height: 48px;
+  border-radius: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.smallBtnGreen {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.smallBtnWhite {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+@media (min-width: 640px) {
+  .navActions {
+    width: auto;
+  }
+
+  .btnPublish {
+    flex: initial;
+  }
+
+  .heroActions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .categories {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .quickBoxes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .quickBoxActions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
