@@ -371,9 +371,9 @@ const MessengerIcon = () => (
 )
 
 const redesSociales = [
-  { nombre: 'Facebook', href: 'https://facebook.com', icono: <FacebookIcon /> },
+  { nombre: 'Facebook', href: 'https://www.facebook.com/pidelodelcampo', icono: <FacebookIcon /> },
   { nombre: 'Instagram', href: 'https://instagram.com', icono: <InstagramIcon /> },
-  { nombre: 'WhatsApp', href: 'https://wa.me/573001234567', icono: <WhatsAppIcon /> },
+  { nombre: 'WhatsApp', href: 'https://wa.me/573213419106', icono: <WhatsAppIcon /> },
   { nombre: 'TikTok', href: 'https://tiktok.com', icono: <TikTokIcon /> },
   { nombre: 'YouTube', href: 'https://youtube.com', icono: <YouTubeIcon /> },
   { nombre: 'Telegram', href: 'https://telegram.org', icono: <TelegramIcon /> },
